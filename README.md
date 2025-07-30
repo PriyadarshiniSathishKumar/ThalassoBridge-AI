@@ -1,8 +1,5 @@
 **ThalassoBridge AI**
 
----
-
-```
 # 🩸 ThalassoBridge AI
 
 **An AI-powered blood donation and thalassemia support platform built for the Blood Warriors Hackathon.**  
@@ -14,14 +11,10 @@ Connects patients, donors, and caregivers through intelligent donor forecasting,
 <img width="1919" height="819" alt="Screenshot 2025-07-30 220947" src="https://github.com/user-attachments/assets/176b7c42-c992-4c3d-be04-92c71016c2a0" />
 <img width="1919" height="824" alt="Screenshot 2025-07-30 221015" src="https://github.com/user-attachments/assets/90c9cffa-aba0-4562-a72e-499c19d40e8a" />
 
----
-
 ## 🚀 Live Demo
 
 👉 [Try the App on Lovable](https://lovable.dev/projects/b8826985-a1aa-473e-819a-e8d713a01b02)  
 📁 [View the GitHub Repository](https://github.com/PriyadarshiniSathishKumar/ThalassoBridge-AI)
-
----
 
 ## 🧠 Overview
 
@@ -34,8 +27,6 @@ Connects patients, donors, and caregivers through intelligent donor forecasting,
 
 Built with ❤️ to support thalassemia warriors and the blood donation ecosystem in India.
 
----
-
 ## 🌟 Features
 
 | Module | Description |
@@ -45,8 +36,6 @@ Built with ❤️ to support thalassemia warriors and the blood donation ecosyst
 | 💬 AI Chat Assistant | Empathetic chatbot for patients, donors & caregivers with multilingual support |
 | 📋 Donor/Patient Portal | Buttons to register donors, find donors, schedule transfusions, or request emergency help |
 | 🌐 Multilingual UX | Auto or manual translation in **English**, **Hindi**, and **Tamil** |
-
----
 
 ## 🔍 Datasets Used
 
@@ -58,8 +47,6 @@ Built with ❤️ to support thalassemia warriors and the blood donation ecosyst
    ➤ [Kaggle: letslive/alpha-thalassemia-dataset](https://www.kaggle.com/datasets/letslive/alpha-thalassemia-dataset)  
    Used to provide diagnosis interpretation and transfusion criteria.
 
----
-
 ## 🛠️ Built With
 
 - **Framework**: [Vite](https://vitejs.dev/)
@@ -70,7 +57,6 @@ Built with ❤️ to support thalassemia warriors and the blood donation ecosyst
 - **Design Platform**: [Lovable](https://lovable.dev/)
 - **Languages**: TypeScript, JavaScript, Python (for data analysis)
 
----
 
 ## 📁 Folder Structure
 
