@@ -14,7 +14,280 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      blood_requests: {
+        Row: {
+          blood_type: string
+          contact_number: string
+          created_at: string | null
+          description: string | null
+          hospital_address: string
+          hospital_name: string
+          id: string
+          needed_by: string
+          requester_id: string
+          status: string | null
+          units_needed: number
+          updated_at: string | null
+          urgency_level: string
+        }
+        Insert: {
+          blood_type: string
+          contact_number: string
+          created_at?: string | null
+          description?: string | null
+          hospital_address: string
+          hospital_name: string
+          id?: string
+          needed_by: string
+          requester_id: string
+          status?: string | null
+          units_needed?: number
+          updated_at?: string | null
+          urgency_level: string
+        }
+        Update: {
+          blood_type?: string
+          contact_number?: string
+          created_at?: string | null
+          description?: string | null
+          hospital_address?: string
+          hospital_name?: string
+          id?: string
+          needed_by?: string
+          requester_id?: string
+          status?: string | null
+          units_needed?: number
+          updated_at?: string | null
+          urgency_level?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "blood_requests_requester_id_fkey"
+            columns: ["requester_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      chat_messages: {
+        Row: {
+          context_data: Json | null
+          created_at: string | null
+          id: string
+          message: string
+          message_type: string | null
+          session_id: string | null
+          user_id: string | null
+        }
+        Insert: {
+          context_data?: Json | null
+          created_at?: string | null
+          id?: string
+          message: string
+          message_type?: string | null
+          session_id?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          context_data?: Json | null
+          created_at?: string | null
+          id?: string
+          message?: string
+          message_type?: string | null
+          session_id?: string | null
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "chat_messages_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      donor_predictions: {
+        Row: {
+          created_at: string | null
+          frequency: number | null
+          id: string
+          monetary: number | null
+          prediction_score: number | null
+          recency: number | null
+          time_since_last: number | null
+          user_id: string | null
+          will_donate_prediction: boolean | null
+        }
+        Insert: {
+          created_at?: string | null
+          frequency?: number | null
+          id?: string
+          monetary?: number | null
+          prediction_score?: number | null
+          recency?: number | null
+          time_since_last?: number | null
+          user_id?: string | null
+          will_donate_prediction?: boolean | null
+        }
+        Update: {
+          created_at?: string | null
+          frequency?: number | null
+          id?: string
+          monetary?: number | null
+          prediction_score?: number | null
+          recency?: number | null
+          time_since_last?: number | null
+          user_id?: string | null
+          will_donate_prediction?: boolean | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "donor_predictions_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      donors: {
+        Row: {
+          created_at: string | null
+          frequency: number | null
+          id: string
+          is_available: boolean | null
+          last_donation_date: string | null
+          medical_notes: string | null
+          monetary_donations: number | null
+          recency: number | null
+          times_donated: number | null
+          updated_at: string | null
+          user_id: string
+        }
+        Insert: {
+          created_at?: string | null
+          frequency?: number | null
+          id?: string
+          is_available?: boolean | null
+          last_donation_date?: string | null
+          medical_notes?: string | null
+          monetary_donations?: number | null
+          recency?: number | null
+          times_donated?: number | null
+          updated_at?: string | null
+          user_id: string
+        }
+        Update: {
+          created_at?: string | null
+          frequency?: number | null
+          id?: string
+          is_available?: boolean | null
+          last_donation_date?: string | null
+          medical_notes?: string | null
+          monetary_donations?: number | null
+          recency?: number | null
+          times_donated?: number | null
+          updated_at?: string | null
+          user_id?: string
+        }
+        Relationships: [
+          {
+            foreignKeyName: "donors_user_id_fkey"
+            columns: ["user_id"]
+            isOneToOne: true
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      emergency_requests: {
+        Row: {
+          blood_type: string
+          contact_number: string
+          created_at: string | null
+          hospital_address: string
+          hospital_name: string
+          id: string
+          patient_condition: string | null
+          requester_id: string
+          status: string | null
+          units_needed: number
+          updated_at: string | null
+        }
+        Insert: {
+          blood_type: string
+          contact_number: string
+          created_at?: string | null
+          hospital_address: string
+          hospital_name: string
+          id?: string
+          patient_condition?: string | null
+          requester_id: string
+          status?: string | null
+          units_needed?: number
+          updated_at?: string | null
+        }
+        Update: {
+          blood_type?: string
+          contact_number?: string
+          created_at?: string | null
+          hospital_address?: string
+          hospital_name?: string
+          id?: string
+          patient_condition?: string | null
+          requester_id?: string
+          status?: string | null
+          units_needed?: number
+          updated_at?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "emergency_requests_requester_id_fkey"
+            columns: ["requester_id"]
+            isOneToOne: false
+            referencedRelation: "profiles"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          blood_type: string | null
+          created_at: string | null
+          email: string
+          full_name: string
+          id: string
+          is_donor: boolean | null
+          location: string | null
+          phone: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          blood_type?: string | null
+          created_at?: string | null
+          email: string
+          full_name: string
+          id: string
+          is_donor?: boolean | null
+          location?: string | null
+          phone?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          blood_type?: string | null
+          created_at?: string | null
+          email?: string
+          full_name?: string
+          id?: string
+          is_donor?: boolean | null
+          location?: string | null
+          phone?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
