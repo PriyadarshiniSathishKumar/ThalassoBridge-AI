@@ -20,9 +20,9 @@ const DashboardCard = ({
 }: DashboardCardProps) => {
   const variantStyles = {
     default: "border-border",
-    care: "border-pastel-blue/30 bg-gradient-to-br from-pastel-blue/10 to-pastel-teal/10",
-    urgent: "border-pastel-pink/30 bg-gradient-to-br from-pastel-pink/10 to-pastel-pink/5",
-    success: "border-pastel-green/30 bg-gradient-to-br from-pastel-green/10 to-pastel-green/5"
+    care: "border-peach/30 bg-gradient-to-br from-peach/10 to-light-peach/10",
+    urgent: "border-destructive/30 bg-gradient-to-br from-destructive/10 to-destructive/5",
+    success: "border-peach/30 bg-gradient-to-br from-peach/10 to-peach/5"
   };
 
   return (
@@ -38,9 +38,9 @@ const DashboardCard = ({
         {icon && (
           <div className={cn(
             "p-2 rounded-md",
-            variant === "care" && "text-pastel-blue",
-            variant === "urgent" && "text-pastel-pink",
-            variant === "success" && "text-pastel-green",
+            variant === "care" && "text-peach",
+            variant === "urgent" && "text-destructive",
+            variant === "success" && "text-peach",
             variant === "default" && "text-muted-foreground"
           )}>
             {icon}

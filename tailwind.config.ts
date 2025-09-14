@@ -52,14 +52,11 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Pastel Healthcare colors
-				pastel: {
-					blue: 'hsl(var(--pastel-blue))',
-					teal: 'hsl(var(--pastel-teal))',
-					purple: 'hsl(var(--pastel-purple))',
-					green: 'hsl(var(--pastel-green))',
-					pink: 'hsl(var(--pastel-pink))'
-				},
+				// Simple colors
+				peach: 'hsl(var(--peach))',
+				'light-peach': 'hsl(var(--light-peach))',
+				'pure-black': 'hsl(var(--pure-black))',
+				'pure-white': 'hsl(var(--pure-white))',
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
 					foreground: 'hsl(var(--sidebar-foreground))',
