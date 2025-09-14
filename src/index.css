@@ -8,54 +8,54 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    /* Ultra High Contrast Medical Theme */
-    --background: 255 255 255; /* pure white */
-    --foreground: 15 23 42; /* slate-900 - very dark */
+    /* Soft Pastel Medical Theme */
+    --background: 251 252 254; /* very light blue-gray */
+    --foreground: 51 65 85; /* readable dark slate */
 
     --card: 255 255 255; /* pure white */
-    --card-foreground: 15 23 42; /* slate-900 - very dark */
+    --card-foreground: 51 65 85; /* readable dark slate */
 
     --popover: 255 255 255; /* pure white */
-    --popover-foreground: 15 23 42; /* slate-900 - very dark */
+    --popover-foreground: 51 65 85; /* readable dark slate */
 
-    /* Deep Medical Navy */
-    --primary: 15 23 42; /* slate-900 - very dark navy */
-    --primary-foreground: 255 255 255; /* pure white */
+    /* Soft Pastel Blue */
+    --primary: 147 197 253; /* light blue-300 */
+    --primary-foreground: 30 58 138; /* darker blue for contrast */
 
-    /* Professional Deep Teal */
-    --secondary: 4 47 46; /* teal-900 - very dark teal */
-    --secondary-foreground: 255 255 255; /* pure white */
+    /* Gentle Pastel Teal */
+    --secondary: 153 246 228; /* teal-200 */
+    --secondary-foreground: 19 78 74; /* darker teal for contrast */
 
     --muted: 248 250 252; /* slate-50 */
-    --muted-foreground: 30 41 59; /* slate-800 */
+    --muted-foreground: 100 116 139; /* slate-500 */
 
-    /* Safe Deep Blue Accent */
-    --accent: 29 78 216; /* blue-700 - safe blue */
-    --accent-foreground: 255 255 255; /* pure white */
+    /* Soft Pastel Purple */
+    --accent: 196 181 253; /* purple-300 */
+    --accent-foreground: 91 33 182; /* darker purple for contrast */
 
-    --destructive: 220 38 38; /* red-600 */
-    --destructive-foreground: 255 255 255; /* pure white */
+    --destructive: 252 165 165; /* red-300 */
+    --destructive-foreground: 153 27 27; /* darker red for contrast */
 
     --border: 226 232 240; /* slate-200 */
-    --input: 226 232 240; /* slate-200 */
-    --ring: 15 23 42; /* slate-900 */
+    --input: 241 245 249; /* slate-100 */
+    --ring: 147 197 253; /* light blue-300 */
 
-    /* Custom Healthcare Variables */
-    --medical-navy: 15 23 42; /* slate-900 */
-    --caring-teal: 4 47 46; /* teal-900 */
-    --safe-blue: 29 78 216; /* blue-700 */
-    --gentle-gray: 248 250 252; /* slate-50 */
-    --trust-green: 21 128 61; /* green-700 */
+    /* Custom Pastel Healthcare Variables */
+    --pastel-blue: 147 197 253; /* light blue-300 */
+    --pastel-teal: 153 246 228; /* teal-200 */
+    --pastel-purple: 196 181 253; /* purple-300 */
+    --pastel-green: 187 247 208; /* green-200 */
+    --pastel-pink: 251 207 232; /* pink-200 */
     
     /* Gradients */
-    --gradient-primary: linear-gradient(135deg, hsl(var(--primary)), hsl(var(--caring-teal)));
-    --gradient-gentle: linear-gradient(180deg, hsl(var(--gentle-gray)), hsl(var(--background)));
-    --gradient-care: linear-gradient(45deg, hsl(var(--primary) / 0.05), hsl(var(--caring-teal) / 0.05));
+    --gradient-primary: linear-gradient(135deg, hsl(var(--pastel-blue)), hsl(var(--pastel-teal)));
+    --gradient-gentle: linear-gradient(180deg, hsl(var(--background)), hsl(var(--card)));
+    --gradient-care: linear-gradient(45deg, hsl(var(--pastel-blue) / 0.1), hsl(var(--pastel-teal) / 0.1));
     
     /* Shadows */
-    --shadow-gentle: 0 4px 12px hsl(var(--primary) / 0.1);
-    --shadow-care: 0 8px 32px hsl(var(--caring-teal) / 0.15);
-    --shadow-warm: 0 4px 20px hsl(var(--safe-blue) / 0.15);
+    --shadow-gentle: 0 4px 12px hsl(var(--pastel-blue) / 0.15);
+    --shadow-care: 0 8px 32px hsl(var(--pastel-teal) / 0.2);
+    --shadow-warm: 0 4px 20px hsl(var(--pastel-purple) / 0.2);
     
     /* Animations */
     --transition-care: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);

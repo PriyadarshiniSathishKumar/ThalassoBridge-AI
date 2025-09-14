@@ -52,13 +52,13 @@ export default {
 					DEFAULT: 'hsl(var(--card))',
 					foreground: 'hsl(var(--card-foreground))'
 				},
-				// Healthcare-specific colors
-				medical: {
-					blue: 'hsl(var(--medical-blue))',
-					teal: 'hsl(var(--caring-teal))',
-					amber: 'hsl(var(--warm-amber))',
-					gray: 'hsl(var(--gentle-gray))',
-					green: 'hsl(var(--trust-green))'
+				// Pastel Healthcare colors
+				pastel: {
+					blue: 'hsl(var(--pastel-blue))',
+					teal: 'hsl(var(--pastel-teal))',
+					purple: 'hsl(var(--pastel-purple))',
+					green: 'hsl(var(--pastel-green))',
+					pink: 'hsl(var(--pastel-pink))'
 				},
 				sidebar: {
 					DEFAULT: 'hsl(var(--sidebar-background))',
